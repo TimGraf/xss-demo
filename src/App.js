@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NotSoDangerousComponent from './Components/NotSoDangerousComponent';
+import DangerousComponent from './Components/DangerousComponent';
+import BasicComponent from './Components/BasicComponent';
+import { default as AnotherComponent } from './Components/BasicComponent';
+import LinksComponent from './Components/LinksComponent';
+import SafeLinksComponent from './Components/SafeLinksComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AnotherComponent />
+      <BasicComponent />
+      <DangerousComponent />
+      <NotSoDangerousComponent />
+      <LinksComponent />
+      <SafeLinksComponent />
     </div>
   );
 }
