@@ -2,6 +2,10 @@ Reproducing examples from https://youtu.be/8sPxTurpbe8
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+For the text components try inserting the following text `<img src=x onerror=alert('XSS')>` to see how each handle it.  These components show various methods for inserting text from user input fields.
+
+For the link components try inserting the following text `javascript:alert('XSS')` and press enter to see how they handle it.  These components mimic displaying web links in a list format.  enter a valid URL and press enter to build a list of links.
+
 ## Available Scripts
 
 In the project directory, you can run:
